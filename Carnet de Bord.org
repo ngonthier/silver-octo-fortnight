@@ -1,0 +1,12 @@
+# Carnet de Bord 
+## Auteur : Nicolas Gonthier
+
+* Idées
+
+*
+
+** Style Transfer Texture Generation
+
+*** 2017/06/01 : 
+    Cumulants => Cardoso 
+    FFT3D sur les features issues du Réseau
