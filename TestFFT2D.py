@@ -42,8 +42,6 @@ def get_loss(sess,net,img_ref,layer):
     F_a = tf.fft2d(tf.complex(a,0.))
     F_a_conj = tf.conj(F_a)
     
-    N = 1
-    
     for i in range(N):
         inter_corr_x = tf.multiply(F_x,F_x_conj)
         inter_corr_a = tf.multiply(F_a,F_a_conj)
