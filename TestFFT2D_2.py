@@ -27,7 +27,7 @@
 import tensorflow as tf
 import numpy as np
 
-list_numberFeaturesOutput = [('conv1_1',64),('conv1_2',128),('conv1_3',256),('conv1_4',512)]
+list_numberFeaturesOutput = [('conv1_1',64),('conv1_2',128),('conv1_3',256)]
 
 def get_loss(sess,net,img_ref,layer):
 	
@@ -41,7 +41,6 @@ def get_loss(sess,net,img_ref,layer):
 		x = tf.transpose(x, [0,3,1,2])
 		a = tf.transpose(a, [0,3,1,2])
 		_,N,_,_ = a.shape
-		print(layer,N)
 		F_x = tf.fft2d(tf.complex(x,0.))
 		F_x_conj = tf.conj(F_x)
 		F_a = tf.fft2d(tf.complex(a,0.))
@@ -69,7 +68,7 @@ def get_loss(sess,net,img_ref,layer):
 def main(args):
 	
 	# Definition of the first operations :
-	height, width, numberChannels = 800,600,3
+	height, width, numberChannels = 400,300,3
 	net = {}
 	current = tf.Variable(np.zeros((1, height, width, numberChannels), dtype=np.float32))
 	net['input'] = current
@@ -102,6 +101,12 @@ def main(args):
 	print("Before loss evaluation")
 	loss_evaluation = sess.run(loss)
 	print("loss_evaluation",loss_evaluation)
+	
+	optimizer = tf.train.GradientDescentOptimizer(10)
+	train = optimizer.minimize(loss)
+	print("Before train on step")
+	sess.run(train)
+	print("After train")
 	
 	return(0)
 
