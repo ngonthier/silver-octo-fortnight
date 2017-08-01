@@ -1,0 +1,272 @@
+** (gedit:18870): WARNING **: Set document metadata failed: La définition de l'attribut metadata::gedit-spell-enabled n'est pas prise en charge
+
+** (gedit:18870): WARNING **: Set document metadata failed: La définition de l'attribut metadata::gedit-encoding n'est pas prise en charge
+python TradeOff_Style_Content.py 
+verbosity turned on
+Namespace(clip_var=1, clipping_type='ImageStyleBGR', config_layers='PoolConfig', config_layers_tab='FirstConvs', content_img_name='Louvre_Big', content_layer_weights=[1.0], content_layers=['conv4_2'], content_strengh=10.0, data_folder='data/', gpu_frac=0.0, img_ext='.png', img_folder='/home/nicolas/Style-Transfer/images/', img_output_folder='/home/nicolas/Style-Transfer/TradeOff/', init='Gaussian', init_noise_ratio=0.05, init_range=0.0, learning_rate=10.0, loss=['texture', 'content'], max_iter=2000, maxcor=10, n=4, optimizer='lbfgs', output_img_name='PastileST_10.0_texture_content', p=4, padding='SAME', plot=False, pooling_type='avg', print_iter=500, sampling='down', start_from_noise=0, style_img_name='StarryNight_Big', style_layer_weights=[1.0, 1.0, 1.0, 1.0, 1.0], style_layers=['conv1_1', 'pool1', 'pool2', 'pool3', 'pool4'], tf_profiler=False, tv=False, type_of_loss='add', verbose=True, vgg_name='normalizedvgg.mat')
+Exception when we try to open the image, try with a different extension format .png
+The image have been sucessfully loaded with a different extension
+Exception when we try to open the image, try with a different extension format .png
+The image have been sucessfully loaded with a different extension
+Load Data  data/gram_StarryNight_Big_600_800_avg_SAME_n.pkl
+net loaded and gram computation after  2.0741443634033203  s
+Memory Growth
+2017-07-31 12:10:20.731329: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use SSE4.1 instructions, but these are available on your machine and could speed up CPU computations.
+2017-07-31 12:10:20.731354: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use SSE4.2 instructions, but these are available on your machine and could speed up CPU computations.
+2017-07-31 12:10:21.054585: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:893] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2017-07-31 12:10:21.055311: I tensorflow/core/common_runtime/gpu/gpu_device.cc:940] Found device 0 with properties: 
+name: GeForce GTX 1080 Ti
+major: 6 minor: 1 memoryClockRate (GHz) 1.582
+pciBusID 0000:03:00.0
+Total memory: 10.91GiB
+Free memory: 10.50GiB
+2017-07-31 12:10:21.055340: I tensorflow/core/common_runtime/gpu/gpu_device.cc:961] DMA: 0 
+2017-07-31 12:10:21.055350: I tensorflow/core/common_runtime/gpu/gpu_device.cc:971] 0:   Y 
+2017-07-31 12:10:21.055368: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1030] Creating TensorFlow device (/gpu:0) -> (device: 0, name: GeForce GTX 1080 Ti, pci bus id: 0000:03:00.0)
+Former image not found, use of white noise mixed with the content image as initialization image
+content_layers [('conv4_2', 1)]
+style_layers [('conv1_1', 1), ('pool1', 1), ('pool2', 1), ('pool3', 1), ('pool4', 1)]
+init loss total
+Start LBFGS optim with a print each  500  iterations
+sess.graph.finalize()
+loss before optimization
+content_loss = 3.18e+07, style_loss = 1.17e+09, loss_total = 1.20e+09, 
+Iteration  0 after  562.2132904529572  s
+content_loss = 1.98e+07, style_loss = 2.71e+08, loss_total = 2.91e+08, 
+
+** (gedit:18870): WARNING **: Set document metadata failed: La définition de l'attribut metadata::gedit-position n'est pas prise en charge
+
+** (gedit:18870): WARNING **: Set document metadata failed: La définition de l'attribut metadata::gedit-position n'est pas prise en charge
+Iteration  1 after  535.025319814682  s
+content_loss = 1.89e+07, style_loss = 1.97e+08, loss_total = 2.15e+08, 
+Iteration  2 after  540.9642698764801  s
+content_loss = 2.01e+07, style_loss = 1.66e+08, loss_total = 1.86e+08, 
+Iteration  3 after  536.201833486557  s
+content_loss = 2.13e+07, style_loss = 1.46e+08, loss_total = 1.67e+08, 
+Close Sess
+Computation total for  2194.048027038574  s
+verbosity turned on
+Namespace(clip_var=1, clipping_type='ImageStyleBGR', config_layers='PoolConfig', config_layers_tab='FirstConvs', content_img_name='Louvre_Big', content_layer_weights=[1.0], content_layers=['conv4_2'], content_strengh=1.0, data_folder='data/', gpu_frac=0.0, img_ext='.png', img_folder='/home/nicolas/Style-Transfer/images/', img_output_folder='/home/nicolas/Style-Transfer/TradeOff/', init='Gaussian', init_noise_ratio=0.05, init_range=0.0, learning_rate=10.0, loss=['texture', 'content'], max_iter=2000, maxcor=10, n=4, optimizer='lbfgs', output_img_name='PastileST_1.0_texture_content', p=4, padding='SAME', plot=False, pooling_type='avg', print_iter=500, sampling='down', start_from_noise=0, style_img_name='StarryNight_Big', style_layer_weights=[1.0, 1.0, 1.0, 1.0, 1.0], style_layers=['conv1_1', 'pool1', 'pool2', 'pool3', 'pool4'], tf_profiler=False, tv=False, type_of_loss='add', verbose=True, vgg_name='normalizedvgg.mat')
+Exception when we try to open the image, try with a different extension format .png
+The image have been sucessfully loaded with a different extension
+Exception when we try to open the image, try with a different extension format .png
+The image have been sucessfully loaded with a different extension
+Load Data  data/gram_StarryNight_Big_600_800_avg_SAME_n.pkl
+net loaded and gram computation after  2.360502243041992  s
+Memory Growth
+2017-07-31 12:46:55.074062: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1030] Creating TensorFlow device (/gpu:0) -> (device: 0, name: GeForce GTX 1080 Ti, pci bus id: 0000:03:00.0)
+Former image not found, use of white noise mixed with the content image as initialization image
+content_layers [('conv4_2', 1)]
+style_layers [('conv1_1', 1), ('pool1', 1), ('pool2', 1), ('pool3', 1), ('pool4', 1)]
+init loss total
+Start LBFGS optim with a print each  500  iterations
+sess.graph.finalize()
+loss before optimization
+content_loss = 3.18e+06, style_loss = 1.17e+09, loss_total = 1.17e+09, 
+Iteration  0 after  536.4974813461304  s
+content_loss = 1.41e+07, style_loss = 3.25e+07, loss_total = 4.66e+07, 
+Iteration  1 after  518.252256155014  s
+content_loss = 1.29e+07, style_loss = 2.04e+07, loss_total = 3.33e+07, 
+Iteration  2 after  513.8129868507385  s
+content_loss = 1.20e+07, style_loss = 1.62e+07, loss_total = 2.82e+07, 
+Iteration  3 after  511.86139965057373  s
+content_loss = 1.13e+07, style_loss = 1.42e+07, loss_total = 2.55e+07, 
+Close Sess
+Computation total for  2086.1693127155304  s
+verbosity turned on
+Namespace(clip_var=1, clipping_type='ImageStyleBGR', config_layers='PoolConfig', config_layers_tab='FirstConvs', content_img_name='Louvre_Big', content_layer_weights=[1.0], content_layers=['conv4_2'], content_strengh=0.1, data_folder='data/', gpu_frac=0.0, img_ext='.png', img_folder='/home/nicolas/Style-Transfer/images/', img_output_folder='/home/nicolas/Style-Transfer/TradeOff/', init='Gaussian', init_noise_ratio=0.05, init_range=0.0, learning_rate=10.0, loss=['texture', 'content'], max_iter=2000, maxcor=10, n=4, optimizer='lbfgs', output_img_name='PastileST_0.1_texture_content', p=4, padding='SAME', plot=False, pooling_type='avg', print_iter=500, sampling='down', start_from_noise=0, style_img_name='StarryNight_Big', style_layer_weights=[1.0, 1.0, 1.0, 1.0, 1.0], style_layers=['conv1_1', 'pool1', 'pool2', 'pool3', 'pool4'], tf_profiler=False, tv=False, type_of_loss='add', verbose=True, vgg_name='normalizedvgg.mat')
+Exception when we try to open the image, try with a different extension format .png
+The image have been sucessfully loaded with a different extension
+Exception when we try to open the image, try with a different extension format .png
+The image have been sucessfully loaded with a different extension
+Load Data  data/gram_StarryNight_Big_600_800_avg_SAME_n.pkl
+net loaded and gram computation after  1.7734780311584473  s
+Memory Growth
+2017-07-31 13:21:40.666146: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1030] Creating TensorFlow device (/gpu:0) -> (device: 0, name: GeForce GTX 1080 Ti, pci bus id: 0000:03:00.0)
+Former image not found, use of white noise mixed with the content image as initialization image
+content_layers [('conv4_2', 1)]
+style_layers [('conv1_1', 1), ('pool1', 1), ('pool2', 1), ('pool3', 1), ('pool4', 1)]
+init loss total
+Start LBFGS optim with a print each  500  iterations
+sess.graph.finalize()
+loss before optimization
+content_loss = 3.18e+05, style_loss = 1.17e+09, loss_total = 1.17e+09, 
+Iteration  0 after  555.6882510185242  s
+content_loss = 3.73e+06, style_loss = 3.64e+06, loss_total = 7.37e+06, 
+Iteration  1 after  7.183481931686401  s
+content_loss = 3.73e+06, style_loss = 3.64e+06, loss_total = 7.37e+06, 
+Iteration  2 after  8.569533586502075  s
+content_loss = 3.95e+06, style_loss = 3.55e+06, loss_total = 7.50e+06, 
+Iteration  3 after  563.2523658275604  s
+content_loss = 3.27e+06, style_loss = 2.91e+06, loss_total = 6.18e+06, 
+Close Sess
+Computation total for  1139.7691943645477  s
+verbosity turned on
+Namespace(clip_var=1, clipping_type='ImageStyleBGR', config_layers='PoolConfig', config_layers_tab='FirstConvs', content_img_name='Louvre_Big', content_layer_weights=[1.0], content_layers=['conv4_2'], content_strengh=0.01, data_folder='data/', gpu_frac=0.0, img_ext='.png', img_folder='/home/nicolas/Style-Transfer/images/', img_output_folder='/home/nicolas/Style-Transfer/TradeOff/', init='Gaussian', init_noise_ratio=0.05, init_range=0.0, learning_rate=10.0, loss=['texture', 'content'], max_iter=2000, maxcor=10, n=4, optimizer='lbfgs', output_img_name='PastileST_0.01_texture_content', p=4, padding='SAME', plot=False, pooling_type='avg', print_iter=500, sampling='down', start_from_noise=0, style_img_name='StarryNight_Big', style_layer_weights=[1.0, 1.0, 1.0, 1.0, 1.0], style_layers=['conv1_1', 'pool1', 'pool2', 'pool3', 'pool4'], tf_profiler=False, tv=False, type_of_loss='add', verbose=True, vgg_name='normalizedvgg.mat')
+Exception when we try to open the image, try with a different extension format .png
+The image have been sucessfully loaded with a different extension
+Exception when we try to open the image, try with a different extension format .png
+The image have been sucessfully loaded with a different extension
+Load Data  data/gram_StarryNight_Big_600_800_avg_SAME_n.pkl
+net loaded and gram computation after  2.1309659481048584  s
+Memory Growth
+2017-07-31 13:40:40.805416: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1030] Creating TensorFlow device (/gpu:0) -> (device: 0, name: GeForce GTX 1080 Ti, pci bus id: 0000:03:00.0)
+Former image not found, use of white noise mixed with the content image as initialization image
+content_layers [('conv4_2', 1)]
+style_layers [('conv1_1', 1), ('pool1', 1), ('pool2', 1), ('pool3', 1), ('pool4', 1)]
+init loss total
+Start LBFGS optim with a print each  500  iterations
+sess.graph.finalize()
+loss before optimization
+content_loss = 3.18e+04, style_loss = 1.17e+09, loss_total = 1.17e+09, 
+Iteration  0 after  536.7181589603424  s
+content_loss = 6.62e+05, style_loss = 7.06e+05, loss_total = 1.37e+06, 
+Iteration  1 after  513.9825892448425  s
+content_loss = 5.95e+05, style_loss = 4.40e+05, loss_total = 1.03e+06, 
+Iteration  2 after  5.972092390060425  s
+content_loss = 5.95e+05, style_loss = 4.39e+05, loss_total = 1.03e+06, 
+Iteration  3 after  511.10602831840515  s
+content_loss = 5.67e+05, style_loss = 3.47e+05, loss_total = 9.14e+05, 
+Close Sess
+Computation total for  1573.2140431404114  s
+verbosity turned on
+Namespace(clip_var=1, clipping_type='ImageStyleBGR', config_layers='PoolConfig', config_layers_tab='FirstConvs', content_img_name='Louvre_Big', content_layer_weights=[1.0], content_layers=['conv4_2'], content_strengh=0.001, data_folder='data/', gpu_frac=0.0, img_ext='.png', img_folder='/home/nicolas/Style-Transfer/images/', img_output_folder='/home/nicolas/Style-Transfer/TradeOff/', init='Gaussian', init_noise_ratio=0.05, init_range=0.0, learning_rate=10.0, loss=['texture', 'content'], max_iter=2000, maxcor=10, n=4, optimizer='lbfgs', output_img_name='PastileST_0.001_texture_content', p=4, padding='SAME', plot=False, pooling_type='avg', print_iter=500, sampling='down', start_from_noise=0, style_img_name='StarryNight_Big', style_layer_weights=[1.0, 1.0, 1.0, 1.0, 1.0], style_layers=['conv1_1', 'pool1', 'pool2', 'pool3', 'pool4'], tf_profiler=False, tv=False, type_of_loss='add', verbose=True, vgg_name='normalizedvgg.mat')
+Exception when we try to open the image, try with a different extension format .png
+The image have been sucessfully loaded with a different extension
+Exception when we try to open the image, try with a different extension format .png
+The image have been sucessfully loaded with a different extension
+Load Data  data/gram_StarryNight_Big_600_800_avg_SAME_n.pkl
+net loaded and gram computation after  1.7032482624053955  s
+Memory Growth
+2017-07-31 14:06:53.600969: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1030] Creating TensorFlow device (/gpu:0) -> (device: 0, name: GeForce GTX 1080 Ti, pci bus id: 0000:03:00.0)
+Former image not found, use of white noise mixed with the content image as initialization image
+content_layers [('conv4_2', 1)]
+style_layers [('conv1_1', 1), ('pool1', 1), ('pool2', 1), ('pool3', 1), ('pool4', 1)]
+init loss total
+Start LBFGS optim with a print each  500  iterations
+sess.graph.finalize()
+loss before optimization
+content_loss = 3.18e+03, style_loss = 1.17e+09, loss_total = 1.17e+09, 
+Iteration  0 after  561.3505189418793  s
+content_loss = 1.24e+05, style_loss = 4.60e+05, loss_total = 5.83e+05, 
+Iteration  1 after  586.3698151111603  s
+content_loss = 1.19e+05, style_loss = 2.50e+05, loss_total = 3.69e+05, 
+Iteration  2 after  586.2103245258331  s
+content_loss = 1.16e+05, style_loss = 1.70e+05, loss_total = 2.87e+05, 
+Iteration  3 after  582.7182102203369  s
+content_loss = 1.14e+05, style_loss = 1.28e+05, loss_total = 2.42e+05, 
+Close Sess
+Computation total for  2321.623329639435  s
+verbosity turned on
+Namespace(clip_var=1, clipping_type='ImageStyleBGR', config_layers='PoolConfig', config_layers_tab='FirstConvs', content_img_name='Louvre_Big', content_layer_weights=[1.0], content_layers=['conv4_2'], content_strengh=0.0001, data_folder='data/', gpu_frac=0.0, img_ext='.png', img_folder='/home/nicolas/Style-Transfer/images/', img_output_folder='/home/nicolas/Style-Transfer/TradeOff/', init='Gaussian', init_noise_ratio=0.05, init_range=0.0, learning_rate=10.0, loss=['texture', 'content'], max_iter=2000, maxcor=10, n=4, optimizer='lbfgs', output_img_name='PastileST_0.0001_texture_content', p=4, padding='SAME', plot=False, pooling_type='avg', print_iter=500, sampling='down', start_from_noise=0, style_img_name='StarryNight_Big', style_layer_weights=[1.0, 1.0, 1.0, 1.0, 1.0], style_layers=['conv1_1', 'pool1', 'pool2', 'pool3', 'pool4'], tf_profiler=False, tv=False, type_of_loss='add', verbose=True, vgg_name='normalizedvgg.mat')
+Exception when we try to open the image, try with a different extension format .png
+The image have been sucessfully loaded with a different extension
+Exception when we try to open the image, try with a different extension format .png
+The image have been sucessfully loaded with a different extension
+Load Data  data/gram_StarryNight_Big_600_800_avg_SAME_n.pkl
+net loaded and gram computation after  2.213560104370117  s
+Memory Growth
+2017-07-31 14:45:35.745952: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1030] Creating TensorFlow device (/gpu:0) -> (device: 0, name: GeForce GTX 1080 Ti, pci bus id: 0000:03:00.0)
+Former image not found, use of white noise mixed with the content image as initialization image
+content_layers [('conv4_2', 1)]
+style_layers [('conv1_1', 1), ('pool1', 1), ('pool2', 1), ('pool3', 1), ('pool4', 1)]
+init loss total
+Start LBFGS optim with a print each  500  iterations
+sess.graph.finalize()
+loss before optimization
+content_loss = 3.18e+02, style_loss = 1.17e+09, loss_total = 1.17e+09, 
+Iteration  0 after  547.8695735931396  s
+content_loss = 1.97e+04, style_loss = 4.59e+05, loss_total = 4.79e+05, 
+Iteration  1 after  548.8225481510162  s
+content_loss = 1.84e+04, style_loss = 2.43e+05, loss_total = 2.61e+05, 
+Iteration  2 after  541.7452962398529  s
+content_loss = 1.80e+04, style_loss = 1.64e+05, loss_total = 1.82e+05, 
+Iteration  3 after  590.4682650566101  s
+content_loss = 1.77e+04, style_loss = 1.20e+05, loss_total = 1.37e+05, 
+Close Sess
+Computation total for  2234.373008966446  s
+verbosity turned on
+Namespace(clip_var=1, clipping_type='ImageStyleBGR', config_layers='PoolConfig', config_layers_tab='FirstConvs', content_img_name='Louvre_Big', content_layer_weights=[1.0], content_layers=['conv4_2'], content_strengh=1e-05, data_folder='data/', gpu_frac=0.0, img_ext='.png', img_folder='/home/nicolas/Style-Transfer/images/', img_output_folder='/home/nicolas/Style-Transfer/TradeOff/', init='Gaussian', init_noise_ratio=0.05, init_range=0.0, learning_rate=10.0, loss=['texture', 'content'], max_iter=2000, maxcor=10, n=4, optimizer='lbfgs', output_img_name='PastileST_1e-05_texture_content', p=4, padding='SAME', plot=False, pooling_type='avg', print_iter=500, sampling='down', start_from_noise=0, style_img_name='StarryNight_Big', style_layer_weights=[1.0, 1.0, 1.0, 1.0, 1.0], style_layers=['conv1_1', 'pool1', 'pool2', 'pool3', 'pool4'], tf_profiler=False, tv=False, type_of_loss='add', verbose=True, vgg_name='normalizedvgg.mat')
+Exception when we try to open the image, try with a different extension format .png
+The image have been sucessfully loaded with a different extension
+Exception when we try to open the image, try with a different extension format .png
+The image have been sucessfully loaded with a different extension
+Load Data  data/gram_StarryNight_Big_600_800_avg_SAME_n.pkl
+net loaded and gram computation after  2.0646512508392334  s
+Memory Growth
+2017-07-31 15:22:49.981307: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1030] Creating TensorFlow device (/gpu:0) -> (device: 0, name: GeForce GTX 1080 Ti, pci bus id: 0000:03:00.0)
+Former image not found, use of white noise mixed with the content image as initialization image
+content_layers [('conv4_2', 1)]
+style_layers [('conv1_1', 1), ('pool1', 1), ('pool2', 1), ('pool3', 1), ('pool4', 1)]
+init loss total
+Start LBFGS optim with a print each  500  iterations
+sess.graph.finalize()
+loss before optimization
+content_loss = 3.18e+01, style_loss = 1.17e+09, loss_total = 1.17e+09, 
+Iteration  0 after  571.6319739818573  s
+content_loss = 3.61e+03, style_loss = 4.37e+05, loss_total = 4.41e+05, 
+Iteration  1 after  594.6122469902039  s
+content_loss = 3.58e+03, style_loss = 2.40e+05, loss_total = 2.44e+05, 
+Iteration  2 after  592.8776664733887  s
+content_loss = 3.49e+03, style_loss = 1.60e+05, loss_total = 1.63e+05, 
+Iteration  3 after  591.6764011383057  s
+content_loss = 3.40e+03, style_loss = 1.15e+05, loss_total = 1.19e+05, 
+Close Sess
+Computation total for  2356.1565220355988  s
+verbosity turned on
+Namespace(clip_var=1, clipping_type='ImageStyleBGR', config_layers='PoolConfig', config_layers_tab='FirstConvs', content_img_name='Louvre_Big', content_layer_weights=[1.0], content_layers=['conv4_2'], content_strengh=1e-06, data_folder='data/', gpu_frac=0.0, img_ext='.png', img_folder='/home/nicolas/Style-Transfer/images/', img_output_folder='/home/nicolas/Style-Transfer/TradeOff/', init='Gaussian', init_noise_ratio=0.05, init_range=0.0, learning_rate=10.0, loss=['texture', 'content'], max_iter=2000, maxcor=10, n=4, optimizer='lbfgs', output_img_name='PastileST_1e-06_texture_content', p=4, padding='SAME', plot=False, pooling_type='avg', print_iter=500, sampling='down', start_from_noise=0, style_img_name='StarryNight_Big', style_layer_weights=[1.0, 1.0, 1.0, 1.0, 1.0], style_layers=['conv1_1', 'pool1', 'pool2', 'pool3', 'pool4'], tf_profiler=False, tv=False, type_of_loss='add', verbose=True, vgg_name='normalizedvgg.mat')
+Exception when we try to open the image, try with a different extension format .png
+The image have been sucessfully loaded with a different extension
+Exception when we try to open the image, try with a different extension format .png
+The image have been sucessfully loaded with a different extension
+Load Data  data/gram_StarryNight_Big_600_800_avg_SAME_n.pkl
+net loaded and gram computation after  2.0817506313323975  s
+Memory Growth
+2017-07-31 16:02:06.166600: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1030] Creating TensorFlow device (/gpu:0) -> (device: 0, name: GeForce GTX 1080 Ti, pci bus id: 0000:03:00.0)
+Former image not found, use of white noise mixed with the content image as initialization image
+content_layers [('conv4_2', 1)]
+style_layers [('conv1_1', 1), ('pool1', 1), ('pool2', 1), ('pool3', 1), ('pool4', 1)]
+init loss total
+Start LBFGS optim with a print each  500  iterations
+sess.graph.finalize()
+loss before optimization
+content_loss = 3.18e+00, style_loss = 1.17e+09, loss_total = 1.17e+09, 
+Iteration  0 after  543.6093466281891  s
+content_loss = 4.18e+02, style_loss = 4.69e+05, loss_total = 4.69e+05, 
+Iteration  1 after  554.0305721759796  s
+content_loss = 4.49e+02, style_loss = 2.47e+05, loss_total = 2.47e+05, 
+Iteration  2 after  590.6778347492218  s
+content_loss = 4.63e+02, style_loss = 1.67e+05, loss_total = 1.67e+05, 
+Iteration  3 after  559.3202197551727  s
+content_loss = 4.71e+02, style_loss = 1.20e+05, loss_total = 1.21e+05, 
+Close Sess
+Computation total for  2253.0032205581665  s
+verbosity turned on
+Namespace(clip_var=1, clipping_type='ImageStyleBGR', config_layers='PoolConfig', config_layers_tab='FirstConvs', content_img_name='Louvre_Big', content_layer_weights=[1.0], content_layers=['conv4_2'], content_strengh=0.0, data_folder='data/', gpu_frac=0.0, img_ext='.png', img_folder='/home/nicolas/Style-Transfer/images/', img_output_folder='/home/nicolas/Style-Transfer/TradeOff/', init='Gaussian', init_noise_ratio=0.05, init_range=0.0, learning_rate=10.0, loss=['texture', 'content'], max_iter=2000, maxcor=10, n=4, optimizer='lbfgs', output_img_name='PastileST_0.0_texture_content', p=4, padding='SAME', plot=False, pooling_type='avg', print_iter=500, sampling='down', start_from_noise=0, style_img_name='StarryNight_Big', style_layer_weights=[1.0, 1.0, 1.0, 1.0, 1.0], style_layers=['conv1_1', 'pool1', 'pool2', 'pool3', 'pool4'], tf_profiler=False, tv=False, type_of_loss='add', verbose=True, vgg_name='normalizedvgg.mat')
+Exception when we try to open the image, try with a different extension format .png
+The image have been sucessfully loaded with a different extension
+Exception when we try to open the image, try with a different extension format .png
+The image have been sucessfully loaded with a different extension
+Load Data  data/gram_StarryNight_Big_600_800_avg_SAME_n.pkl
+net loaded and gram computation after  1.6849501132965088  s
+Memory Growth
+2017-07-31 16:39:38.778084: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1030] Creating TensorFlow device (/gpu:0) -> (device: 0, name: GeForce GTX 1080 Ti, pci bus id: 0000:03:00.0)
+Former image not found, use of white noise mixed with the content image as initialization image
+content_layers [('conv4_2', 1)]
+style_layers [('conv1_1', 1), ('pool1', 1), ('pool2', 1), ('pool3', 1), ('pool4', 1)]
+init loss total
+Start LBFGS optim with a print each  500  iterations
+sess.graph.finalize()
+loss before optimization
+content_loss = 0.00e+00, style_loss = 1.17e+09, loss_total = 1.17e+09, 
+Iteration  0 after  583.2622666358948  s
+content_loss = 0.00e+00, style_loss = 4.60e+05, loss_total = 4.60e+05, 
+Iteration  1 after  588.8141489028931  s
+content_loss = 0.00e+00, style_loss = 2.37e+05, loss_total = 2.37e+05, 
+Iteration  2 after  589.3281297683716  s
+content_loss = 0.00e+00, style_loss = 1.59e+05, loss_total = 1.59e+05, 
+Iteration  3 after  592.2545771598816  s
+content_loss = 0.00e+00, style_loss = 1.13e+05, loss_total = 1.13e+05, 
+Close Sess
+Computation total for  2358.58136844635  s
+
